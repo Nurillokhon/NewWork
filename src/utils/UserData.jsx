@@ -3,7 +3,8 @@ import { api } from './Fetch'
 class UserData {
     async getUser(props) {
         console.log("props keldi iiiii " + props);
-    let mass = FetchData.get(`https://davlatlar.herokuapp.com/${(props !== "en" || props === null) ? 'ru' : ""}`)
+        if(props === 'en'){
+            let mass = FetchData.get(`https://davlatlar.herokuapp.com/`)
             .then(ress => {
                 return ress.data
             })
@@ -12,6 +13,29 @@ class UserData {
             })
 
         return mass
+        }
+        if(props === 'ru'){
+            let mass = FetchData.get(`https://davlatlar.herokuapp.com/ru`)
+            .then(ress => {
+                return ress.data
+            })
+            .catch(e => {
+                return JSON.stringify(e)
+            })
+
+        return mass
+        }
+        else{
+            let mass = FetchData.get(`https://davlatlar.herokuapp.com/ru`)
+            .then(ress => {
+                return ress.data
+            })
+            .catch(e => {
+                return JSON.stringify(e)
+            })
+
+        return mass
+        }
     }
 
     async getweather(curr) {
