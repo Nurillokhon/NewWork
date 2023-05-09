@@ -86,19 +86,19 @@ const About = () => {
       <div className="container">
         <div className='my-2 d-flex justify-content-around '>{weather} {valuta} {<Time/>}</div>
         <div className="row container ">
-          <div className="col-6 image">
+          <div className="col-12 col-lg-6 image">
             <img src={location.state.img} alt={location.state.name} />
           </div>
-          <div className="col-6">
+          <div className="col-12 col-lg-6">
             <h3>Name: {location.state.name}</h3>
             <h4 className='mt-5'>Capital: {location.state.capital}</h4>
             <p className='fw-bold mt-5'>About: {location.state.decription}</p>
           </div>
-          <div className="col-6 mt-5">
-            <iframe width="560" height="315" src={location.state.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div className="col-12 col-lg-6 mt-5">
+            <iframe src={location.state.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
-          <div width="560" height="315" className='col-6 mt-5'>
-            <iframe src={location.state.map} width="560" height="315" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div className='col-12 col-lg-6 mt-5'>
+            <iframe src={location.state.map} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div className='col-12 my-5'>
             <Slider img={location.state.about} />

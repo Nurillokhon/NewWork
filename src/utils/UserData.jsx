@@ -3,7 +3,7 @@ import { api } from './Fetch'
 class UserData {
     async getUser(props) {
         console.log("props keldi iiiii " + props);
-        let mass = FetchData.get(`https://davlatlar.herokuapp.com/${props !== "en" ? props : ""}`)
+    let mass = FetchData.get(`https://davlatlar.herokuapp.com/${props !== "en" ? 'ru' : ""}`)
             .then(ress => {
                 return ress.data
             })

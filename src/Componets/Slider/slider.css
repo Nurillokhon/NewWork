@@ -18,7 +18,7 @@
   }
   
   .sliderr{
-    width: 700px !important;
+    width: 500px !important;
   }
   .sliderr .abv{
     padding: 10px;
@@ -36,3 +36,23 @@
     bottom: 1px;
     opacity: 1;
   }
+  .abv h1{
+    font-size: 20px;
+  }
+  .abv h4{
+    font-size: 16px;
+  }
+  @media (max-width: 768px) {
+    .sliderr{
+      width: 300px !important;
+    }
+    .abv h1{
+      font-size: 20px;
+    }
+    .abv h4{
+      font-size: 16px;
+    }
+  }
+
+  
+  

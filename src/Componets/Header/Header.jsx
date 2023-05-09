@@ -68,7 +68,7 @@ const Header = () => {
         <div className="container text-light">
           <Navbar/>
           <div className='srch'>
-            <Input ref={inputRef} onPressEnter={send} onInput={(vall)=>setVal(vall.target.value)} size='large' style={{ width: 500, height: 50 }} placeholder = {t("H_search")} allowClear type="text"/>
+            <Input className='inp' ref={inputRef} onPressEnter={send} onInput={(vall)=>setVal(vall.target.value)} size='large' placeholder = {t("H_search")} allowClear type="text"/>
             <button onClick={send}>{t("H_search")}</button>
           </div>
           <div className='d-flex justify-content-center iconCard'>

@@ -39,7 +39,7 @@ const Card = () => {
         {
           (Country.length > 0) ? Country.map((item, index) => {
             return (
-              <div key={index} className='col-3 myCard' onClick={() => send(item)}>
+              <div key={index} className='col-12 col-sm-6 col-md-4 col-lg-3 myCard' onClick={() => send(item)}>
                 <img src={item.img} alt={item.name} loading='eager' />
                 <div className='desc'>
                   <div className='text-light text-center'>

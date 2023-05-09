@@ -77,3 +77,34 @@ body {
   bottom: 1px;
   opacity: 1;
 }
+
+iframe{
+  width: 560px;
+  height: 315px;
+}
+
+@media (max-width: 769px) {
+  iframe{
+    width: 500px;
+    height: 315px;
+  }
+}
+
+@media (max-width: 650px) {
+  iframe{
+    width: 450px;
+    height: 315px;
+  }
+}
+@media (max-width: 450px) {
+  iframe{
+    width: 350px;
+    height: 270px;
+  }
+}
+@media (max-width: 400px) {
+  iframe{
+    width: 300px;
+    height: 250px;
+  }
+}

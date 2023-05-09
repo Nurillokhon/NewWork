@@ -43,14 +43,13 @@ console.log(props);
                   onClick={ZoomImage}
                   style={{
                     cursor: 'zoom-in',
-                    width: '700px',
                     height: 'auto',
                     transition: 'transform .2s ease-in-out',
                     transform: LargeImage ? 'scale(2)' : 'none',
                   }}
                 />
                 <div className='abv text-light'>
-                  <h1>{item.name}</h1>
+                  <h1 >{item.name}</h1>
                   <h4> <MdLocationOn /> {item.curName} </h4>
                 </div>
               </SwiperSlide>
