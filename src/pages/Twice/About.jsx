@@ -24,7 +24,7 @@ const About = () => {
 
   useEffect(() => {
     getData()
-    // getSum()
+    getSum()
   }, []);
   function getData() {
     UserData.getweather(location.state.name)
@@ -34,17 +34,17 @@ const About = () => {
   }
  
 
-  // function getSum() {
-  //   const API_KEY = '6gETIA1al7Zhpe381WMO1HOcN69ybzP8';
-  //   const config = {
-  //     headers: {
-  //       'apikey': API_KEY
-  //     }
-  //   };
-  //   axios.get('https://api.apilayer.com/fixer/latest?symbols=GBP%2CRUB%2CUSD&base=AED', config)
-  //     .then(response => setSumm(response.data.rates))
-  //     .catch(error => console.error(error));
-  //   }
+  function getSum() {
+    const API_KEY = '6gETIA1al7Zhpe381WMO1HOcN69ybzP8';
+    const config = {
+      headers: {
+        'apikey': API_KEY
+      }
+    };
+    axios.get('https://api.apilayer.com/fixer/latest?symbols=GBP%2CRUB%2CUSD&base=AED', config)
+      .then(response => setSumm(response.data.rates))
+      .catch(error => console.error(error));
+    }
   const valuta = (
     (summ) && <div className='d-flex'>
       <p className='mx-1 d-flex align-items-center'> <BiEuro className='fs-5' />: {summ.GBP} </p>
