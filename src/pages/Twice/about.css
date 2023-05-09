@@ -1,0 +1,79 @@
+.nav{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.image img{
+    width: 100%;
+    object-fit: cover;
+}
+.temp{
+    font-size: 20px;
+    font-family: 'Italiana', serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .temp_gradus{
+    font-family:cursive;
+    font-size: 15px;
+  }
+  
+  .weather{
+    position: relative;
+    z-index: 1005;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img  {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.sliderr{
+  width: 700px !important;
+}
+.sliderr .abv{
+  padding: 10px;
+  position: absolute;
+  bottom: -120px;
+  left: -50px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: .7s;
+}
+
+.sliderr:hover .abv{
+  position: absolute;
+  left: 1px ;
+  bottom: 1px;
+  opacity: 1;
+}

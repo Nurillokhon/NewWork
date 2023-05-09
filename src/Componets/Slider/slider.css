@@ -1,0 +1,38 @@
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .swiper-slide img  {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  
+  .sliderr{
+    width: 700px !important;
+  }
+  .sliderr .abv{
+    padding: 10px;
+    position: absolute;
+    bottom: -120px;
+    left: -50px;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: .7s;
+  }
+  
+  .sliderr:hover .abv{
+    position: absolute;
+    left: 1px ;
+    bottom: 1px;
+    opacity: 1;
+  }
