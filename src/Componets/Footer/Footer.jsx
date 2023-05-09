@@ -15,8 +15,8 @@ const Footer = () => {
             <a href=""><img width={200} src="https://rs.school/images/rs_school_js.svg" alt="js" /></a>
           </div>
           <div className='col-6 text-center  py-5'>
-            <a className='h4 text-light ' href="">{t("F_git")} <BsGithub className='text-dark m-2 fs-3' /></a> <br />
-            <a className='h4 text-light' href="">{t("F_js")} <SiJavascript  className='text-warning m-2'/> </a>
+            <a className='h4 text-light ' href="https://github.com/Nurillokhon/NewWork.git">{t("F_git")} <BsGithub className='text-dark m-2 fs-3' /></a> <br />
+            <a className='h4 text-light' href="https://rs.school/js/">{t("F_js")} <SiJavascript  className='text-warning m-2'/> </a>
           </div>
           <div className="col-12 border-top">
             <p className='text-center text-light mt-2'>09.05.2023</p>
