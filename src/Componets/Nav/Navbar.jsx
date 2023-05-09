@@ -28,8 +28,8 @@ const Navbar = () => {
         <nav className=' container d-flex justify-content-between align-items-center pt-3'>
         <Link className='text-light' style={{textDecoration:'none'}} to='/'><h3>{t("N_touch")}</h3></Link>
         <select onChange={(val) => changeLanguage(val.target.value)} className="form-select form-select-md-lg  mb-3" aria-label=".form-select-lg example">
-          <option selected = {(select === 'En' ? true : false)} value="En">EN</option>
           <option selected = {(select === 'Ru' ? true : false)} value="Ru">RU</option>
+          <option selected = {(select === 'En' ? true : false)} value="En">EN</option>
         </select>
       </nav>
     );
