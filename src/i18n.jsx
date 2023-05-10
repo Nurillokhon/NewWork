@@ -5,7 +5,7 @@ import {initReactI18next} from 'react-i18next'
 
 
 i18.use(Backend).use(LanguageDetector).use(initReactI18next).init({
-  fallbackLng: (localStorage.getItem('language') ? localStorage.getItem('language') : 'Ru'),
+  fallbackLng: (localStorage.getItem('language') ? localStorage.getItem('language') : 'En'),
   debug: true,
   detection: {
     order: ['queryString', 'cookie'],

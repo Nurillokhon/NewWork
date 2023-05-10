@@ -46,10 +46,10 @@ const About = () => {
       .catch(error => console.error(error));
     }
   const valuta = (
-    (summ) && <div className='d-flex'>
-      <p className='mx-1 d-flex align-items-center'> <BiEuro className='fs-5' />: {summ.GBP} </p>
-      <p className='mx-1 d-flex align-items-center'> <BiDollar className='fs-5' />: {summ.USD} </p>
-      <p className='mx-1 d-flex align-items-center'> <BiRuble className='fs-5' />: {summ.RUB} </p>
+    (summ) && <div className='row'>
+      <p className='col-12 col-sm-6 col-md-4 mx-1 d-flex align-items-center'> <BiEuro className='fs-5' />: {summ.GBP} </p>
+      <p className='col-12 col-sm-6 col-md-4 mx-1 d-flex align-items-center'> <BiDollar className='fs-5' />: {summ.USD} </p>
+      <p className='col-12 col-sm-6 col-md-4 mx-1 d-flex align-items-center'> <BiRuble className='fs-5' />: {summ.RUB} </p>
     </div>
   )
 
